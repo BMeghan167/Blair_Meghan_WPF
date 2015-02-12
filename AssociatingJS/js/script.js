@@ -1,5 +1,5 @@
-alert("This is in the js file");
+//Expressions - Age Example
 
-var superheroNames = ["Superman", "Flash", "Wonder Woman", "Green Lantern"]; //0,1,2,3
-
-console.log(superheroNames[1]);
+var yearBorn = 1995;
+var age = 2015 - yearBorn;
+console.log(age);

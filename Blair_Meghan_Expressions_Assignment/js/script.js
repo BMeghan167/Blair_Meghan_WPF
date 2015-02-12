@@ -15,3 +15,5 @@ var totalAfterKids = totalCandy - tootsies[0];
 
 console.log(totalCandy);
 console.log(totalAfterKids);
+console.log("The total amount of candy at opening is" + " " + totalCandy + " ." +
+"After the children's purchase of 178 tootsie rolls the total is" + " " + totalAfterKids + ".");

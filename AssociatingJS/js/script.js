@@ -1,6 +1,9 @@
 //Casting
 
-var stringVar = "6";
-var result = 7 + Number(stringVar);
-console.log(result);
+var areaCode = 301;
+var firstPart = 331;
+var secondPart = 9845;
+//(301) 331-9845
+var phoneNo = "(" + String(areaCode) + ")" + String(firstPart) + "-" + String(secondPart);
+console.log(phoneNo);
 

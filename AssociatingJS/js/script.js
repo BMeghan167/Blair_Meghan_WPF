@@ -1,8 +1,12 @@
-//Assignment Operators
+//Conditional Logic
 
-var a = 3;
-//a ++ ; //a = a + 1 // a += 1
-a --;
-console.log(a);
+var oldEnough = true;
+
+//if the child is old enough, print to the console "you can ride!"
+
+if(oldEnough){
+    //code performed if condition is true
+    console.log("You can ride the coaster!");
+}
 
 

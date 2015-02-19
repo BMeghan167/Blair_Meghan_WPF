@@ -20,5 +20,5 @@ console.log(totalEnd); //prints the final total after taking away the amounts gi
 console.log("The total amount of taffy at opening is" + " " + totalTaffy + "." + " " +
 "After your three purchases the total is" + " " + totalEnd + "."); //prints a clarified phrase explaining the totals
 
-/* I changed 413 to 100 and got a total candy of 938. So this will work for any other values. */
+/* I changed 413 to 100 and got a totalTaffy of 938. So this will work for any other values. */
 

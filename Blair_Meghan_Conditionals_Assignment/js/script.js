@@ -17,10 +17,14 @@ if(susanPurse <= ""){
     console.log("You didn't tell me how many Susan bought!");
 }
 
-var totalPurse = sarahPurse + sallyPurse + susanPurse;
+//var totalPurse = sarahPurse + sallyPurse + susanPurse;
 
-if(totalPurse < stockTotal){
-    console.log("Everyone will get their product on time!");
+if(sarahPurse <= stockTotal){
+    console.log("Sarah will get her purse!");
+}else if(sallyPurse <= stockTotal) {
+    console.log("Sally will get her purse!");
+}else if(susanPurse <= stockTotal) {
+    console.log("Susan will get her purse!");
 }else{
     console.log("You have to wait for restocking!");
 }

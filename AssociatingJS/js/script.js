@@ -1,9 +1,8 @@
-//Functions - Returning Values
+//While Loop
 
-var total = calcArea(30, 20);
+var b = 50; //setup the index
 
-function calcArea(w, h){ 
-    var area = w * h;
-    return area; //function spitting the info out
+while (b > 0){ //checks the condition
+    console.log(b + "kegs on the wall");
+    b--; //increments or decrements the index
 }
-console.log(total);

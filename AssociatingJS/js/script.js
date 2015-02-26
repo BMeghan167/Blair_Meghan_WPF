@@ -1,8 +1,6 @@
-//Functions - Function Execution
+//Functions - Variable Scope
 
-function outputMsg(){
-    console.log("Hello World!");
-}
+var width = 5;
 
 function calcArea(){
     var width = 20;
@@ -12,5 +10,4 @@ function calcArea(){
 }
 
 calcArea();
-calcArea();
-calcArea();
+console.log(width);

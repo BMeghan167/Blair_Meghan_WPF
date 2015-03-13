@@ -8,6 +8,12 @@ var horrorMovies = prompt("How many horror movies would you like to rent?"); //c
 var comedyMovies = prompt("How many comedy movies would you like to rent?"); //creates a variable from the users input of comedy movies they rent
 var actionMovies = prompt("Last question, I swear! \n How many action movies would you like to rent?"); //creates a variable from the users input of how many action movies they want to rent
 
-var totalMovies = movieTypes[0] + movieTypes[1] + movieTypes[74];
-var yourTotal = horrorMovies + comedyMovies + actionMovies;
+var totalMovies = movieTypes[0] + movieTypes[1] + movieTypes[2];
+console.log("There are a total of" + " " + totalMovies + " " + "movies.");
+var yourTotal = Number(horrorMovies) + Number(comedyMovies) + Number(actionMovies);
+console.log("You rented a total of" + " " + yourTotal + " " + "movies.");
+
+
+
+
 

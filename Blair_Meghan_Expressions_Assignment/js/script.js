@@ -13,6 +13,12 @@ console.log("There are a total of" + " " + totalMovies + " " + "movies.");
 var yourTotal = Number(horrorMovies) + Number(comedyMovies) + Number(actionMovies);
 console.log("You rented a total of" + " " + yourTotal + " " + "movies.");
 
+var newMovieTotal = totalMovies -= yourTotal;
+console.log("The total of movies the store owner has left after you pick your movies is" + " " + newMovieTotal + ".");
+
+
+
+
 
 
 

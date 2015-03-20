@@ -12,21 +12,17 @@ var yourSpending = prompt("How much do you want to spend at Colossalcon?");
 
 if(conTicket === ""){
     prompt("You forgot to tell me how much your ticket is!");
-    if(yourCosplay === ""){
-        prompt("You forgot to tell me how much your cosplay is going to cost!");
-    }
-    if(yourSpending === ""){
-        prompt("Your forgot to tell me how much you're spending at the convention!");
-    }
+}else if(yourCosplay === ""){
+    prompt("You forgot to tell me how much your cosplay is going to cost!");
 }else{
     console.log("Keep going!");
 }
 
-if(Number(conTicket) + Number(yourCosplay) + Number(yourSpending) <= conBudget + nextPaycheck){
-    console.log("You have enough money!");
-}else if(rentPaid){
-    console.log("No worries! Your bills are paid!");
+if(yourSpending === ""){
+    prompt("Your forgot to tell me how much you're spending at the convention!");
 }else{
-    console.log("You might want to cut back somewhere!");
+    console.log("You're doing good!");
 }
+
+(Number(conTicket) + Number(yourCosplay) + Number(yourSpending) <= conBudget + nextPaycheck && rentPaid) ? console.log("Everything is okay! You can go to Colossalcon with no worries!") : console.log("Uh oh... you might want to take a step back.");
 

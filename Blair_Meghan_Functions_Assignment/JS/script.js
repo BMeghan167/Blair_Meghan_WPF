@@ -9,21 +9,17 @@ while (userPrompt === ""){
 }
 
 var lotteryNumbers = flLottery(1, 53);
-
-function flLottery(min, max){
-    var flNumbers = Math.floor(Math.random() * (max - min) + min);
-    return flNumbers;
-}
-
-console.log("The Florida Lottery Numbers are " + lotteryNumbers + lotteryNumbers + ".");
-
 var powerBallNum = pbNumbers(1, 59, 1, 35);
 
-function pbNumbers(min, max, min2, max2){
-    var numbers = Math.floor(Math.random() * (max - min) + min);
-    var ball = Math.floor(Math.random() * (max2 - min2) + min2);
-    return numbers;
-    return ball;
+function flLottery(min, max) {
+        var flNumbers = Math.floor(Math.random() * (max - min) + min);
+        return flNumbers * 6;
 }
 
-console.log("The numbers are " + powerBallNum + "and the Powerball is " + )
+function pbNumbers(min, max, min2, max2) {
+        var numbers = Math.floor(Math.random() * (max - min) + min);
+        var ball = Math.floor(Math.random() * (max2 - min2) + min2);
+        console.log("The numbers are " + numbers + " and the PB is " + ball + ".");
+}
+
+console.log("The Florida Lottery Numbers are " + lotteryNumbers + ".");

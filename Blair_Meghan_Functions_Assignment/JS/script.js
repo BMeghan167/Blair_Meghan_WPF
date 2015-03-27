@@ -13,13 +13,13 @@ var powerBallNum = pbNumbers(1, 59, 1, 35);
 
 function flLottery(min, max) {
         var flNumbers = Math.floor(Math.random() * (max - min) + min);
-        return flNumbers * 6;
+        return flNumbers;
 }
+
+console.log("The Florida Lottery Numbers are " + lotteryNumbers + ".");
 
 function pbNumbers(min, max, min2, max2) {
         var numbers = Math.floor(Math.random() * (max - min) + min);
         var ball = Math.floor(Math.random() * (max2 - min2) + min2);
         console.log("The numbers are " + numbers + " and the PB is " + ball + ".");
 }
-
-console.log("The Florida Lottery Numbers are " + lotteryNumbers + ".");

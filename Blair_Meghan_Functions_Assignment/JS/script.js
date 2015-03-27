@@ -8,13 +8,22 @@ while (userPrompt === ""){
     prompt("You didn't tell me which ticket you want!");
 }
 
-var lotteryNumbers = flLottery();
+var lotteryNumbers = flLottery(1, 53);
 
-if(userPrompt === "Florida Lottery"){
-    function flLottery(){
-        var flNumbers = Math.floor(Math.random() * 52);
-        return flNumbers;
-    }
+function flLottery(min, max){
+    var flNumbers = Math.floor(Math.random() * (max - min) + min);
+    return flNumbers;
 }
 
-console.log(lotteryNumbers);
+console.log("The Florida Lottery Numbers are " + lotteryNumbers + lotteryNumbers + ".");
+
+var powerBallNum = pbNumbers(1, 59, 1, 35);
+
+function pbNumbers(min, max, min2, max2){
+    var numbers = Math.floor(Math.random() * (max - min) + min);
+    var ball = Math.floor(Math.random() * (max2 - min2) + min2);
+    return numbers;
+    return ball;
+}
+
+console.log("The numbers are " + powerBallNum + "and the Powerball is " + )
